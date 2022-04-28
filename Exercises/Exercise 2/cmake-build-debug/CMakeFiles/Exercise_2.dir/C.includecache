@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Documents/School/C++ & C/Exercises/Exercise 2/main.c
+stdio.h
+-
+string.h
+-
+assert.h
+-
+regex.h
+-
+ctype.h
+-
+stdlib.h
+-
+stdio.h
+-
+stdbool.h
+-
+limits.h
+-
+math.h
+-
+

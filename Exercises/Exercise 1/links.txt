@@ -1,0 +1,3 @@
+https://stackoverflow.com/questions/3385201/confused-about-stdin-stdout-and-stderr
+https://en.wikipedia.org/wiki/Standard_streams
+https://www.howtogeek.com/435903/what-are-stdin-stdout-and-stderr-on-linux

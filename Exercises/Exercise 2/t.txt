@@ -1,0 +1,158 @@
+#include <stdio.h>
+#include <string.h>
+#include <assert.h>
+#include <regex.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+//Global definitions
+#define  OUTPUT_FILE_NAME "railway_planner_output.txt"
+#define  READ_AUTH "r"
+#define  WRITE_AUTH "w"
+#define  E_NO_FILE "File doesn't exists."
+#define  E_EMPTY_FILE "File is empty."
+
+/**
+* Print to the output file
+* @param output - the wanted data to print into the file
+* @return EXIT_SUCCESS if the operation was successful, EXIT_FAILURE otherwise
+*/
+int writeToOutputFile(const char* output)
+{
+	const char* FILE_PATH = OUTPUT_FILE_NAME;
+	int isOk = 0;
+	if(output == NULL)
+	{
+		return EXIT_FAILURE;
+	}
+	FILE *file = fopen(FILE_PATH, WRITE_AUTH); // try to open the output file
+	if (file != NULL)
+	{
+		isOk = fputs(output, file); // try to write to the file
+		if(isOk == EOF)
+		{
+			//an error occurred while trying to write to the output file
+		}
+		isOk = fclose(file);
+		if(isOk == EOF)
+		{
+			//Error while closing the output file
+			return EXIT_FAILURE;
+		}
+	}
+	else //We couldn't open the output file
+	{
+		return EXIT_FAILURE;
+	}
+	return EXIT_SUCCESS;
+}
+
+/**
+* Exit with failure
+* @param file - the given file to check
+* @param error - the reason for failure
+*/
+void exitWithError(FILE** file, char* error){
+	if(error != NULL)
+	{
+		writeToOutputFile(error);
+	}
+	if(file != NULL)
+	{
+		fclose(*file);
+		*file = NULL;
+	}
+	//exit is outside the if because we wanna terminate the program no matter what
+	exit(EXIT_FAILURE);
+}
+
+/**
+* Check if the program was called with a non-empty file
+* @param file - the given file to check
+*/
+void checkIfFileEmpty(FILE** file){
+	long initialLoc = ftell(*file); //save current location in file
+	int isOk = 0;
+	isOk = fseek(*file, 0, SEEK_END);
+	if(isOk != 0) //Error while entering to the file
+	{
+		exitWithError(&*file, E_NO_FILE);
+	}
+	if (ftell(*file) == 0) //Check if the file has no lines
+	{
+		//File has no lines
+		exitWithError(&*file, E_EMPTY_FILE);
+	}
+
+	isOk =  fseek(*file, initialLoc, SEEK_SET); //return to the initial location in the file
+	if(isOk != 0)
+	{
+		//Error while entering to the file
+		exitWithError(&*file, E_NO_FILE);
+	}
+}
+
+/**
+* Check if the program was called with a valid file-path
+* @param filePath - the entered file path
+* @param file - file pointer, setting it fot future usage
+*/
+void checkInputFile(const char* filePath, FILE** file)
+{
+	if(filePath == NULL || strlen(*filePath) == 0)
+	{
+		//no filepath was received
+		exitWithError(NULL, E_NO_FILE);
+	}
+	*file = fopen(filePath, READ_AUTH);
+	if(*file == NULL)
+	{
+		//error while trying to open the input file
+		exitWithError(NULL, E_NO_FILE);
+	}
+	//Check if file is empty
+	checkIfFileEmpty(&*file);
+}
+/**
+* Check if the program was called with a valid input
+* @param argc - number of input
+* @param argv - an array of the given program's input
+* @param file - file pointer, setting it fot future usage
+* @return EXIT_SUCCESS if the operation was successful and the input is valid, otherwise
+ * returning with EXIT_FAILURE
+*/
+void checkProgramInput(const int argc, const char* argv[], FILE** file)
+{
+	const int LEGAL_PARM_NUM = 2;
+	const char* USAGE_ERROR = "Usage: RailWayPlanner <InputFile>";
+	if (argc != LEGAL_PARM_NUM) //Checking if the input is only 1 parm as required
+	{
+		exitWithError(NULL, USAGE_ERROR);
+	}
+	const char* filename = argv[1];
+	checkInputFile(filename, &*file);
+}
+/**
+* Calc the lowest cost for the given road length
+* @param file - pointer to the input file
+*/
+void calcMinCostRoad(FILE** file)
+{
+	
+}
+
+int main(int argc, char* argv[])
+{
+	//File
+	FILE* file = NULL;
+	checkProgramInput(argc, argv, &file);
+	if(file == NULL) //Make sure we have a valid pointer to the input file
+	{
+		exitWithError(NULL,E_NO_FILE);
+	}
+	calcMinCostRoad(&file);
+	return EXIT_SUCCESS;
+}

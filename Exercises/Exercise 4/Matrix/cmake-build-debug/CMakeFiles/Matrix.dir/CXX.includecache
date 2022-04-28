@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Documents/School/C++ & C/Exercises/Exercise 4/Matrix/Matrix.cpp
+Matrix.h
+/cygdrive/d/Documents/School/C++ & C/Exercises/Exercise 4/Matrix/Matrix.h
+
+/cygdrive/d/Documents/School/C++ & C/Exercises/Exercise 4/Matrix/Matrix.h
+iostream
+-
+cmath
+-
+fstream
+-
+

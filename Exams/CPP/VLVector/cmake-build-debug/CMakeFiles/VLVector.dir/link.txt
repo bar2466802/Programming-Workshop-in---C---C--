@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/VLVector.dir/main.cpp.o  -o VLVector.exe -Wl,--out-implib,libVLVector.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

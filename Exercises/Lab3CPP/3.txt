@@ -1,0 +1,88 @@
+class hangers
+{
+public:
+    //default constructor
+    hangers(const int n)
+    {
+        _hooks = new std::string[n];
+        _n = n;
+    };
+    
+    //Copy constructor
+    hangers(const hangers & other): _n(other._n),
+            _hooks(new std::string[other._n])
+    {
+      for(int i = 0; i < _n; i++)
+      {
+          _hooks[i] = other._hooks[i];
+      }
+    };
+    
+    //support bool conv
+     explicit operator bool() const
+     { 
+        for(int i = 0; i < _n; i++)
+        {
+            if(_hooks[i] == "")
+            {
+                return false;
+            }
+        }
+        return true;
+     }
+    
+    //redefine =
+    hangers & operator =(const hangers & other)
+    {
+        if(this != &other)
+        {
+            delete[] _hooks;
+            _n = other._n;
+            _hooks = new std::string[_n];
+            *this = other; //use copy constructor 
+        }
+        return *this;
+    };
+    
+    //redefine [] with &
+    std::string & operator [](const int index)
+    {
+       return _hooks[index % _n];
+    };
+    
+    //redefine [] with value
+    std::string operator [](const int index) const
+    {
+       return _hooks[index % _n];
+    };
+    
+    int getN() const
+    {
+        return _n;
+    };
+    
+    std::string* getHooks() const
+    {
+        return _hooks;
+    };
+    
+    friend std::ostream & operator <<( std::ostream& out, const hangers& h);
+    
+    //destructor
+    ~hangers()
+    {
+      delete[] _hooks;  
+    };
+private:
+    int _n;
+    std::string * _hooks;
+};
+
+std::ostream& operator <<(std::ostream& out, hangers& h)
+{
+    for(int i = 0; i < h.getN(); i++)
+    {
+        out << i << ": " << h[i] << std::endl;
+    }
+    return out; 
+}

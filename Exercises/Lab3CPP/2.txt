@@ -1,0 +1,52 @@
+class candybag
+{
+public:
+    //default constructor
+    candybag(size_t num): _num(num), _candy(new std::string[num]) {};
+    
+    //Copy constructor
+    candybag(const candybag & other): _num(other._num),
+            _candy(new std::string[other._num])
+    {
+      for(size_t i = 0; i < _num; i++)
+      {
+          _candy[i] = other._candy[i];
+      }
+    };
+    
+    //redefine =
+    candybag & operator =(const candybag & other)
+    {
+        if(this != &other)
+        {
+            delete[] _candy;
+            _num = other._num;
+            _candy = new std::string[_num];
+            for(size_t i = 0; i < _num; i++)
+            {
+              _candy[i] = other._candy[i];
+            }
+        }
+        return *this;
+    };
+    //destructor
+    ~candybag()
+    {
+      delete[] _candy;  
+    };
+    
+    void fill(size_t index, std::string treat)
+    {
+        _candy[index] = treat;
+    };
+    
+    std::string eat(size_t index) 
+    { 
+        std::string temp = _candy[index];
+        _candy[index]= "";
+        return temp;
+    };
+private:
+    size_t _num;
+    std::string * _candy;
+};

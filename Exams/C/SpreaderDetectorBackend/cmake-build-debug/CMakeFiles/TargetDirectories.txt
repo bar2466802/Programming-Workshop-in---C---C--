@@ -1,0 +1,3 @@
+/cygdrive/d/Documents/School/C++ & C/Exams/C/SpreaderDetectorBackend/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/Documents/School/C++ & C/Exams/C/SpreaderDetectorBackend/cmake-build-debug/CMakeFiles/SpreaderDetectorBackend.dir
+/cygdrive/d/Documents/School/C++ & C/Exams/C/SpreaderDetectorBackend/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,23 @@
+manageStudents
+
+gcc -Wextra -Wall -Wvla -std=c99 -lm manageStudents.c -o manageStudents
+
+~labcc2/www/codingStyleCheck ex1.tar
+
+~labcc2/www/ex1/school_solution
+
+~labcc2/www/ex2/school_solution
+
+~labcc2/www/ex1/presubmit_ex1 ex1.tar
+
+tar -cvf ex1.tar manageStudents.c
+
+3888914775,Itzel Gardner,21,26,Iran,Tehran
+5496060426,Korbin Murillo,4,30,Pakistan,Islamabad
+3845354610,Rhett Vargas,98,29,United-Kingdom,London
+3845354610,Rhett Vargas,99,29,United-Kingdom,London
+3845354610,Rhett Vargas,9,29,United-Kingdom,London
+
+
+
+38s5354610,Rhett Vargas,98,29,United-Kingdom,London

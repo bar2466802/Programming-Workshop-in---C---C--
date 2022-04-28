@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Matrix.dir/main.cpp.o CMakeFiles/Matrix.dir/Activation.cpp.o CMakeFiles/Matrix.dir/Matrix.cpp.o CMakeFiles/Matrix.dir/Dense.cpp.o CMakeFiles/Matrix.dir/MlpNetwork.cpp.o  -o Matrix.exe -Wl,--out-implib,libMatrix.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

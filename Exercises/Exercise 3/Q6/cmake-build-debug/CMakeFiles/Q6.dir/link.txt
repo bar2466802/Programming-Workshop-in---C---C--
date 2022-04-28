@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/Q6.dir/main.cpp.o  -o Q6.exe -Wl,--out-implib,libQ6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

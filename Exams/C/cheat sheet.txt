@@ -1,0 +1,18 @@
+~labcc2/www/codingStyleCheck SpreaderDetectorBackend.c
+
+gcc -Wall -Wextra -Wvla -Werror -g -lm -std=c99 SpreaderDetectorBackend.c  -o SpreaderDetectorBackend
+
+./SpreaderDetectorBackend <Path to People.in> <Path to Meetings.in>
+
+
+./SpreaderDetectorBackend 1_people.in 1_meeting.in
+
+valgrind --leak-check=full  ./SpreaderDetectorBackend 1_people.in 1_meeting.in
+ 
+
+
+diff SpreaderDetectorAnalysis.out.txt 1_sol.out
+
+tar -cvf exam.tar STATEMENT.pdf README SpreaderDetectorBackend.c
+
+~labcc2/www/c_exam/presubmit_c_exam exam.tar

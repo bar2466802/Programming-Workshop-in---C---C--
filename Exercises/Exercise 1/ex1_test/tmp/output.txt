@@ -1,0 +1,18 @@
+Enter student info. To exit press q, then enter
+ERROR: ID must only be a 10 digits number
+in line 0
+Enter student info. To exit press q, then enter
+ERROR: ID must only be a 10 digits number
+in line 1
+Enter student info. To exit press q, then enter
+ERROR: ID must only be a 10 digits number
+in line 2
+Enter student info. To exit press q, then enter
+ERROR: Age must only be a number between 18 and 120
+in line 3
+Enter student info. To exit press q, then enter
+Enter student info. To exit press q, then enter
+ERROR: ID must be a 10 digits number
+in line 5
+Enter student info. To exit press q, then enter
+best student info is: 18446744073709551615,a,2,18,f,d

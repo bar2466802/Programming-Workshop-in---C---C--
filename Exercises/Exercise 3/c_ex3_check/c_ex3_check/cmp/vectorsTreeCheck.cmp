@@ -1,0 +1,169 @@
+Try to add vector 0:
+		[1.000000, 2.000000, 3.000000] (size: 3)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[1.000000, 2.000000, 3.000000] (size: 3)
+	forEachRBTree return code: 1
+
+Try to add vector 1:
+		[1.000000, 2.000000, 3.000000] (size: 3)
+	insertToRBTree return code: 0
+	Print all vectors in tree
+		[1.000000, 2.000000, 3.000000] (size: 3)
+	forEachRBTree return code: 1
+
+Try to add vector 2:
+		[10.000000, 10.000000] (size: 2)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 3:
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 4:
+		[3.000000, 2.000000, 1.000000] (size: 3)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 5:
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 6:
+		[3.300000, -2.200000, 1.100000] (size: 3)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[3.300000, -2.200000, 1.100000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 7:
+		[1.000000, 2.000000, 4.000000] (size: 3)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[1.000000, 2.000000, 4.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[3.300000, -2.200000, 1.100000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 8:
+		[0.000000] (size: 1)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[0.000000] (size: 1)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[1.000000, 2.000000, 4.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[3.300000, -2.200000, 1.100000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 9:
+		[1.000000, 2.000000, 3.000000, -4.000000] (size: 4)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[0.000000] (size: 1)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[1.000000, 2.000000, 3.000000, -4.000000] (size: 4)
+		[1.000000, 2.000000, 4.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[3.300000, -2.200000, 1.100000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 10:
+		[3.000000, 2.000000, 1.000000] (size: 3)
+	insertToRBTree return code: 0
+	Print all vectors in tree
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[0.000000] (size: 1)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[1.000000, 2.000000, 3.000000, -4.000000] (size: 4)
+		[1.000000, 2.000000, 4.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[3.300000, -2.200000, 1.100000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+Try to add vector 11:
+		[1.000000, -2.000000, 3.000000, 4.000000] (size: 4)
+	insertToRBTree return code: 1
+	Print all vectors in tree
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[0.000000] (size: 1)
+		[1.000000, -2.000000, 3.000000, 4.000000] (size: 4)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[1.000000, 2.000000, 3.000000, -4.000000] (size: 4)
+		[1.000000, 2.000000, 4.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[3.300000, -2.200000, 1.100000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+
+vector 0 is in the tree
+vector 1 is in the tree
+vector 2 is in the tree
+vector 3 is in the tree
+vector 4 is in the tree
+vector 5 is in the tree
+vector 6 is in the tree
+vector 7 is in the tree
+vector 8 is in the tree
+vector 9 is in the tree
+vector 10 is in the tree
+vector 11 is in the tree
+
+Changing the return vector from findMaxNormVectorInTree shouldn't change to tree
+		[10.000000, 10.000000] (size: 2)
+
+Changed max vector to [5.0, 5.0, 5.0, 5.0, 5.0] (size 5)
+Print the tree after the change:
+		[-4.880000, 3.660000, -2.440000] (size: 3)
+		[0.000000] (size: 1)
+		[1.000000, -2.000000, 3.000000, 4.000000] (size: 4)
+		[1.000000, 1.000000, 1.000000, 1.000000] (size: 4)
+		[1.000000, 2.000000, 3.000000] (size: 3)
+		[1.000000, 2.000000, 3.000000, -4.000000] (size: 4)
+		[1.000000, 2.000000, 4.000000] (size: 3)
+		[3.000000, 2.000000, 1.000000] (size: 3)
+		[3.300000, -2.200000, 1.100000] (size: 3)
+		[10.000000, 10.000000] (size: 2)
+	forEachRBTree return code: 1
+Free tree
+
+Test done

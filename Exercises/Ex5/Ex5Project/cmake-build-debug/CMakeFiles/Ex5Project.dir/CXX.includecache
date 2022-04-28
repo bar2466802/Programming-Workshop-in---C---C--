@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/d/Documents/School/C++ & C/Exercises/Ex5/Ex5Project/RecommenderSystem.cpp
+RecommenderSystem.h
+/cygdrive/d/Documents/School/C++ & C/Exercises/Ex5/Ex5Project/RecommenderSystem.h
+
+/cygdrive/d/Documents/School/C++ & C/Exercises/Ex5/Ex5Project/RecommenderSystem.h
+iostream
+-
+fstream
+-
+map
+-
+set
+-
+vector
+-
+string
+-
+iomanip
+-
+iterator
+-
+math.h
+-
+functional
+-
+numeric
+-
+limits
+-
+
+/cygdrive/d/Documents/School/C++ & C/Exercises/Ex5/Ex5Project/main.cpp
+iostream
+-
+string
+-
+RecommenderSystem.h
+/cygdrive/d/Documents/School/C++ & C/Exercises/Ex5/Ex5Project/RecommenderSystem.h
+

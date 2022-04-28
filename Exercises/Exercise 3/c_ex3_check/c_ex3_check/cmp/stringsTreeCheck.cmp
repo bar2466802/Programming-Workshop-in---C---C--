@@ -1,0 +1,103 @@
+Try to add the letter a
+	insertToRBTree return code: 1
+a
+	forEachRBTree return code: 1
+
+Try to add the letter a
+	insertToRBTree return code: 0
+a
+	forEachRBTree return code: 1
+
+Try to add the letter e
+	insertToRBTree return code: 1
+ae
+	forEachRBTree return code: 1
+
+Try to add the letter i
+	insertToRBTree return code: 1
+aei
+	forEachRBTree return code: 1
+
+Try to add the letter f
+	insertToRBTree return code: 1
+aefi
+	forEachRBTree return code: 1
+
+Try to add the letter c
+	insertToRBTree return code: 1
+acefi
+	forEachRBTree return code: 1
+
+Try to add the letter h
+	insertToRBTree return code: 1
+acefhi
+	forEachRBTree return code: 1
+
+Try to add the letter d
+	insertToRBTree return code: 1
+acdefhi
+	forEachRBTree return code: 1
+
+Try to add the letter e
+	insertToRBTree return code: 0
+acdefhi
+	forEachRBTree return code: 1
+
+Try to add the letter b
+	insertToRBTree return code: 1
+abcdefhi
+	forEachRBTree return code: 1
+
+Try to add the letter i
+	insertToRBTree return code: 0
+abcdefhi
+	forEachRBTree return code: 1
+
+Try to add the letter g
+	insertToRBTree return code: 1
+abcdefghi
+	forEachRBTree return code: 1
+
+Try to add the letter f
+	insertToRBTree return code: 0
+abcdefghi
+	forEachRBTree return code: 1
+
+Try to add the letter a
+	insertToRBTree return code: 0
+abcdefghi
+	forEachRBTree return code: 1
+
+Try to add NULL into the tree
+a is in the tree
+a is in the tree
+e is in the tree
+i is in the tree
+f is in the tree
+c is in the tree
+h is in the tree
+d is in the tree
+e is in the tree
+b is in the tree
+i is in the tree
+g is in the tree
+f is in the tree
+a is in the tree
+s not in the tree
+aa not in the tree
+A not in the tree
+Empty string not in the tree
+
+The number of strings in the tree is 9.
+
+All the letters in the tree are: a
+b
+c
+d
+e
+f
+g
+h
+i
+
+Test done

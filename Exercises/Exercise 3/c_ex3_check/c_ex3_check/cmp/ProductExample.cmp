@@ -1,0 +1,14 @@
+"MacBook Pro" is in the tree.
+"iPod" is not in the tree.
+"iPhone" is in the tree.
+"iPad" is in the tree.
+"Apple Watch" is in the tree.
+"Apple TV" is not in the tree.
+
+The number of products in the tree is 4.
+
+Name: Apple Watch.		Price: 299.00
+Name: MacBook Pro.		Price: 1499.00
+Name: iPad.		Price: 499.00
+Name: iPhone.		Price: 599.00
+test passed
